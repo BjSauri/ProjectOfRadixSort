@@ -11,7 +11,7 @@ public class RadixSort {
             iterations++;
         }
 
-        while(digit > 0){//считаем кол-во разрядов в макс элементе
+        while(digit > 0){// считаем кол-во разрядов в макс элементе
             iterations++;
             digit = digit / 10;
             max++;
