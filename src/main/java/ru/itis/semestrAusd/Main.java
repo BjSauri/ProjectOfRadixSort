@@ -24,7 +24,7 @@ public class Main {
                 long beginTime = System.nanoTime();
                 radixSort.radixSort(arr);
                 long endTime = System.nanoTime();
-                System.out.println("Количество элементов " + arr.length + ", время работы " + (endTime - beginTime) + ", количество итераций " + radixSort.iterations);
+                System.out.println("Количество элементов " + arr.length + ", время работы в наносекундах" + (endTime - beginTime) + ", количество итераций " + radixSort.iterations);
 
                 radixSort.iterations = 0; //обнуляем счетчик для следующего массива
             }
