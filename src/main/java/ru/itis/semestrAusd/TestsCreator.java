@@ -17,13 +17,13 @@ public class TestsCreator {
             for(int j = 0; j < size; j++){
                 arr.add(generator.nextInt(0,10001)); //элементы от 0 до 10000
             }
-            sb.append(String.join(" ", arr.toString().replaceAll("[\\[\\]]", "").trim()));//trim() удаляет пробелы в начале и в конце строки
-            sb.append("\n");
+            String line = arr.toString().replaceAll("[\\[\\]\\,]", "").trim();//trim() удаляет пробелы в начале и в конце строки
+            sb.append(line).append("\n");
         }
          try(BufferedWriter writer = new BufferedWriter(new FileWriter("tests.txt"))){
              writer.write(sb.toString());
          } catch (IOException e){
              System.out.println("Ошибка в записи файла" + e.getMessage());
-         }
+         }//trim() удаляет пробелы в начале и в конце строки
     }
 }
