@@ -41,7 +41,7 @@ public class RadixSort {
             iterations++;
         }
 
-        for(int i = 0; i < 10; i++){
+        for(int i = 1; i < 10; i++){
             executions[i] = executions[i - 1] + countDigits[i - 1];
             iterations++;
         }
